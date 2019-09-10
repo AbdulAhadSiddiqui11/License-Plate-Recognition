@@ -8,7 +8,7 @@ from skimage import measure
 from skimage.measure import regionprops
 
 # Change the path if required
-path = './sample_images/car.png' 
+path = './sample_images/car6.jpg' 
 
 
 
