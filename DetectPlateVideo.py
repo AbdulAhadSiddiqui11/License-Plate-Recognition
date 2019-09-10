@@ -7,7 +7,8 @@ from skimage.filters import threshold_otsu
 from skimage import measure
 from skimage.measure import regionprops
 
-path = './video12.mp4'
+# Change the path if required
+path = './sample_clips/video12.mp4'
 
 try:
 	capture = cv2.VideoCapture(path)

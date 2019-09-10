@@ -7,7 +7,8 @@ from skimage.filters import threshold_otsu
 from skimage import measure
 from skimage.measure import regionprops
 
-path = './car6.jpg'
+# Change the path if required
+path = './sample_images/car.png' 
 
 
 
