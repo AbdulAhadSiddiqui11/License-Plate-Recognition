@@ -4,11 +4,14 @@ from skimage import measure
 from skimage.measure import regionprops
 import matplotlib.patches as patches
 import matplotlib.pyplot as plt
-import DetectPlateImage
-#import DetectPlateVideo # For video processing
+#import DetectPlateImage
+import DetectPlateVideo # For video processing
 
 # Inverting the pixels 
-license_plate = np.invert(DetectPlateImage.plate_objects[0])
+license_plate = np.invert(DetectPlateVideo.plate_objects[0]) # For video processing
+# license_plate = np.invert(DetectPlateImage.plate_objects[0]) # For image processing
+
+
 '''Label connected regions of an integer array.
 Two pixels are connected when they are neighbors and have the same value. 
 In 2D, they can be neighbors either in a 1- or 2-connected sense. 
