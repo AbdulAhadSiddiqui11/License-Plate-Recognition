@@ -20,7 +20,7 @@ try:
 	        cv2.resizeWindow('Processing Video', 923, 500)
 	        cv2.imwrite("./output/frame%d.jpg" % count, frame)
 	        count += 1
-	        if cv2.waitKey(10) and 0xFF == ord('q'):
+	        if cv2.waitKey(10) and 0xFF == ord('q') or count == 20:
 	            break
 	    else:
 	        break
